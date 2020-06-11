@@ -1,0 +1,35 @@
+* {
+    border: solid black 1px;
+    margin: 0;
+    padding: 0;
+
+}
+
+#main {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 500px;
+    height: auto;
+    padding: 10px 100px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.formEntry {
+    border-radius: 2px;
+    width: auto;
+    height: 25px;
+
+}
