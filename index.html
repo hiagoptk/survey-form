@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Metal+Mania&family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allan&family=Metal+Mania&family=Rancho&display=swap" rel="stylesheet">
     <title> Survey Form</title>
 </head>
 <body>
@@ -54,7 +54,7 @@
             
             <div class="form-group" >
                 <h3 class="opt">Selecione a unidade ou formato das aulas?</h3>
-                <select id="dropdown" name="role" class="form-control" required>
+                <select id="dropdown" name="role" class="formEntry" required>
                   <option disabled selected value>Selecione um pacote...</option>
                   <option value="pct1"> Rio de Janeiro - presencial</option>
                   <option value="pct2"> Petrópolis - presencial</option>
@@ -64,7 +64,7 @@
             </div>
             
             <div class="bolinhas">
-                <h3 class="opt">Selecione seus abaixo qual pacote te interessa</h3>
+                <h3>Selecione abaixo qual pacote te interessa</h3>
                 <div>
                     <label>
                         <input
@@ -101,110 +101,110 @@
                 </div>
             </div>
 
+          <div id="cursoscheck">
+            <h3>Escolha os Cursos Abaixo</h3>
             <div class="caixinhas">
-                <h3 class="opt">Selecione seus cursos :)</h3>
-                <div>
-                              
-                <label
-                ><input
+              <div class="cursos">
+                <label>
+                  <input
                   name="cursos"
                   value="front-end-projects"
                   type="checkbox"
                   class="input-checkbox"
-                /> <p>Tarot</p> </label
-              >
-              <label> 
-                <input
-                  name="cursos"
-                  value="back-end-projects"
-                  type="checkbox"
-                  class="input-checkbox"
-                /> <p>Espelhos</p> </label
-              >
-              <label
-                ><input
-                  name="cursos"
-                  value="data-visualization"
-                  type="checkbox"
-                  class="input-checkbox"
-                /> <p>Bonecos</p> </label
-              >
-              <label
-                ><input
-                  name="cursos"
-                  value="challenges"
-                  type="checkbox"
-                  class="input-checkbox"
-                /> <p>Laminas</p> </label
-              >
-              <label
-                ><input
-                  name="cursos"
-                  value="open-source-community"
-                  type="checkbox"
-                  class="input-checkbox"
-                /> <p>Beijos</p> </label
-              >
-              <label
-                ><input
-                  name="cursos"
-                  value="gitter-help-rooms"
-                  type="checkbox"
-                  class="input-checkbox"
-                /> <p>Reiki</p> </label
-              >
-              <label
-                ><input
-                  name="cursos"
-                  value="videos"
-                  type="checkbox"
-                  class="input-checkbox"
-                /> <p>Runas</p> </label
-              >
-              <label
-                ><input
-                  name="cursos"
-                  value="city-meetups"
-                  type="checkbox"
-                  class="input-checkbox"
-                /> <p>Servidores</p> </label
-              >
-              <label
-                ><input
-                  name="cursos"
-                  value="wiki"
-                  type="checkbox"
-                  class="input-checkbox"
-                /> <p>Ataque e Defesa</p> </label
-              >
-              <label
-                ><input
-                  name="cursos"
-                  value="forum"
-                  type="checkbox"
-                  class="input-checkbox"
-                /> <p>Intro a Magia</p> </label
-              >
-              <label
-                ><input
-                  name="cursos"
-                  value="additional-courses"
-                  type="checkbox"
-                  class="input-checkbox"
-                /> <p>Flow Magiko</p> </label
-              >
-              <label
-                ><input
-                  name="cursos"
-                  value="additional-courses"
-                  type="checkbox"
-                  class="input-checkbox"
-                /> <p>Pedras</p> </label
-              >
-                </div>
+                /> <p>Tarot</p> </label>
+
+                <label> 
+                  <input
+                    name="cursos"
+                    value="back-end-projects"
+                    type="checkbox"
+                    class="input-checkbox"
+                  /> <p>Espelhos</p> </label>
+
+                <label>
+                  <input
+                    name="cursos"
+                    value="data-visualization"
+                    type="checkbox"
+                    class="input-checkbox"
+                  /> <p>Bonecos</p> </label>
+
+                <label>
+                  <input
+                    name="cursos"
+                    value="challenges"
+                    type="checkbox"
+                    class="input-checkbox"
+                  /> <p>Laminas</p> </label>
+              </div>
+              <div class="cursos">
+                <label>
+                  <input
+                    name="cursos"
+                    value="open-source-community"
+                    type="checkbox"
+                    class="input-checkbox"
+                  /> <p>Beijos</p> </label>
+
+                <label>
+                  <input
+                    name="cursos"
+                    value="gitter-help-rooms"
+                    type="checkbox"
+                    class="input-checkbox"
+                  /> <p>Reiki</p> </label>
+
+                <label>
+                  <input
+                    name="cursos"
+                    value="videos"
+                    type="checkbox"
+                    class="input-checkbox"
+                  /> <p>Runas</p> </label>
+
+                <label>
+                  <input
+                    name="cursos"
+                    value="city-meetups"
+                    type="checkbox"
+                    class="input-checkbox"
+                  /> <p>Servidores</p> </label>
+              </div>
+              <div class="cursos">
+                <label>
+                  <input
+                    name="cursos"
+                    value="wiki"
+                    type="checkbox"
+                    class="input-checkbox"
+                  /> <p>Ataque e Defesa</p> </label>
+
+                <label>
+                  <input
+                    name="cursos"
+                    value="forum"
+                    type="checkbox"
+                    class="input-checkbox"
+                  /> <p>Intro a Magia</p> </label>
+
+                <label>
+                  <input
+                    name="cursos"
+                    value="additional-courses"
+                    type="checkbox"
+                    class="input-checkbox"
+                  /> <p>Flow Magiko</p> </label>
+
+                <label>
+                  <input
+                    name="cursos"
+                    value="additional-courses"
+                    type="checkbox"
+                    class="input-checkbox"
+                  /> <p>Pedras</p> </label>
+              </div>
             </div>
-
-
+          </div>
         </form>
     </section>
 </body>
