@@ -4,208 +4,262 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Allan&family=Metal+Mania&family=Rancho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
     <title> Survey Form</title>
 </head>
 <body>
     <section id="main">
-        <header class="text-center">
+
+        <header id="header"class="text-center">
             <h1 id="title">Formulário de Inscrição</h1>
         <p id="description">Um exemplo de formulário responsivo criado para o freeCodeCamp</p>
         </header>
+
         <form id="survey-form">
-            <div class="form-group" >
-                <label id="name-label" for="name"><h3>Name</h3></label>
-                <input 
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Seu nome..."
-                    class="formEntry"
-                    required
-                />
-            </div>
-            
-            <div class="form-group" >
-            <label id="email-label" for="email"><h3>Email</h3></label>
-            <input 
-                type="text"
-                name="email"
-                id="email"
-                placeholder="Seu email..."
-                class="formEntry"
-                required
-            />
-            </div>
-            
-            <div class="form-group" >
-                <label id="number-label" for="number"><h3>Idade</h3></label>
-            <input 
-                type="number"
-                name="idade"
-                id="number"
-                placeholder="Idade..."
-                min = "18"
-                max = "99"
-                class="formEntry"
-                required
-            />
-            </div>
-            
-            <div class="form-group" >
-                <h3 class="opt">Selecione a unidade ou formato das aulas?</h3>
-                <select id="dropdown" name="role" class="formEntry" required>
-                  <option disabled selected value>Selecione um pacote...</option>
-                  <option value="pct1"> Rio de Janeiro - presencial</option>
-                  <option value="pct2"> Petrópolis - presencial</option>
-                  <option value="pct3"> São Paulo - presencial</option>
-                  <option value="pct1"> Preço Único - online</option>
-                </select>
-            </div>
-            
-            <div class="bolinhas">
-                <h3>Selecione abaixo qual pacote te interessa</h3>
-                <div>
-                    <label>
-                        <input
-                        name="pct"
-                        value="definitely"
-                        type="radio"
-                        class="input-radio"
-                        checked
-                        />Unitário</label>
+          <!-- NOME -->
+          <div class="group">
 
-                    <label
-                        ><input
-                        name="pacote"
-                        value="semestral"
-                        type="radio"
-                        class="input-radio"
-                        />6 meses</labe>
-                    
-                    <label
-                        ><input
-                        name="pct"
-                        value="full"
-                        type="radio"
-                        class="input-radio"
-                        />Completo</labe>
-                        
-                    <label>
-                        <input
-                        name="pct"
-                        value="personal"
-                        type="radio"
-                        class="input-radio"
-                        />Personalizado</labe>
-                </div>
+            <div class="form-group" >
+              <label id="name-label" for="name"><h3>Name</h3></label>
+              <input 
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Seu nome..."
+                  class="formEntry"
+                  required
+              />
             </div>
 
-          <div id="cursoscheck">
-            <h3>Escolha os Cursos Abaixo</h3>
-            <div class="caixinhas">
-              <div class="cursos">
+
+          </div>
+
+          <!-- E-MAIL -->
+          <div class="group">
+
+              <label id="email-label" for="email"><h3>Email</h3></label>
+              <input 
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Seu email..."
+                  class="formEntry"
+                  required
+              />
+            
+          </div>
+
+          <!-- IDADE -->
+          <div class="group">
+
+           <label id="number-label" for="number"><h3>Idade</h3></label>
+           <input 
+              type="number"
+              name="idade"
+              id="number"
+              placeholder="Idade..."
+              min = "18"
+              max = "99"
+              class="formEntry"
+              required
+          />
+
+          </div>
+
+          <!-- UNIDADES  -->
+          <div class="group">
+
+            <h3>Selecione a unidade ou formato das aulas?</h3>
+            <select id="dropdown" name="role" class="formEntry" required>
+              <option disabled selected value>Selecione um pacote...</option>
+              <option value="pct1"> Rio de Janeiro - presencial</option>
+              <option value="pct2"> Petrópolis - presencial</option>
+              <option value="pct3"> São Paulo - presencial</option>
+              <option value="pct1"> Preço Único - online</option>
+            </select>
+            
+          </div>
+
+          <!-- TIPO DE PACOTE -->
+          <div class="group">
+
+            <h3>Selecione abaixo qual pacote te interessa</h3>
+            <div class="tipoPct">
+              
                 <label>
-                  <input
+                    <input
+                    name="pct"
+                    value="definitely"
+                    type="radio"
+                    class="input-radio"
+                    checked
+                    /> <p>Unitário</p> </label>
+
+                <label
+                    ><input
+                    name="pacote"
+                    value="semestral"
+                    type="radio"
+                    class="input-radio"
+                    /> <p>6 meses</p> </label>
+              
+
+              
+                <label
+                    ><input
+                    name="pct"
+                    value="full"
+                    type="radio"
+                    class="input-radio"
+                    /> <p>Completo</p> </label>
+                    
+                <label>
+                    <input
+                    name="pct"
+                    value="personal"
+                    type="radio"
+                    class="input-radio"
+                    /> <p>Personal</p> </label>
+              
+            </div>
+
+            
+          </div>
+
+
+          <!-- CURSOS -->
+          <div class="group">
+
+            <h3>Escolha os Cursos Abaixo</h3>
+          <div class="caixinhas">
+            <div class="cursos">
+              <label>
+                <input
+                name="cursos"
+                value="front-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+              /> <p>Tarot</p> </label>
+
+              <label> 
+                <input
                   name="cursos"
-                  value="front-end-projects"
+                  value="back-end-projects"
                   type="checkbox"
                   class="input-checkbox"
-                /> <p>Tarot</p> </label>
+                /> <p>Espelhos</p> </label>
 
-                <label> 
-                  <input
-                    name="cursos"
-                    value="back-end-projects"
-                    type="checkbox"
-                    class="input-checkbox"
-                  /> <p>Espelhos</p> </label>
+              <label>
+                <input
+                  name="cursos"
+                  value="data-visualization"
+                  type="checkbox"
+                  class="input-checkbox"
+                /> <p>Bonecos</p> </label>
 
-                <label>
-                  <input
-                    name="cursos"
-                    value="data-visualization"
-                    type="checkbox"
-                    class="input-checkbox"
-                  /> <p>Bonecos</p> </label>
+              <label>
+                <input
+                  name="cursos"
+                  value="challenges"
+                  type="checkbox"
+                  class="input-checkbox"
+                /> <p>Laminas</p> </label>
+            </div>
 
-                <label>
-                  <input
-                    name="cursos"
-                    value="challenges"
-                    type="checkbox"
-                    class="input-checkbox"
-                  /> <p>Laminas</p> </label>
-              </div>
-              <div class="cursos">
-                <label>
-                  <input
-                    name="cursos"
-                    value="open-source-community"
-                    type="checkbox"
-                    class="input-checkbox"
-                  /> <p>Beijos</p> </label>
+            <div class="cursos">
+              <label>
+                <input
+                  name="cursos"
+                  value="open-source-community"
+                  type="checkbox"
+                  class="input-checkbox"
+                /> <p>Beijos</p> </label>
 
-                <label>
-                  <input
-                    name="cursos"
-                    value="gitter-help-rooms"
-                    type="checkbox"
-                    class="input-checkbox"
-                  /> <p>Reiki</p> </label>
+              <label>
+                <input
+                  name="cursos"
+                  value="gitter-help-rooms"
+                  type="checkbox"
+                  class="input-checkbox"
+                /> <p>Reiki</p> </label>
 
-                <label>
-                  <input
-                    name="cursos"
-                    value="videos"
-                    type="checkbox"
-                    class="input-checkbox"
-                  /> <p>Runas</p> </label>
+              <label>
+                <input
+                  name="cursos"
+                  value="videos"
+                  type="checkbox"
+                  class="input-checkbox"
+                /> <p>Runas</p> </label>
 
-                <label>
-                  <input
-                    name="cursos"
-                    value="city-meetups"
-                    type="checkbox"
-                    class="input-checkbox"
-                  /> <p>Servidores</p> </label>
-              </div>
-              <div class="cursos">
-                <label>
-                  <input
-                    name="cursos"
-                    value="wiki"
-                    type="checkbox"
-                    class="input-checkbox"
-                  /> <p>Ataque e Defesa</p> </label>
+              <label>
+                <input
+                  name="cursos"
+                  value="city-meetups"
+                  type="checkbox"
+                  class="input-checkbox"
+                /> <p>Servidores</p> </label>
+            </div>
 
-                <label>
-                  <input
-                    name="cursos"
-                    value="forum"
-                    type="checkbox"
-                    class="input-checkbox"
-                  /> <p>Intro a Magia</p> </label>
+            <div class="cursos">
+              <label>
+                <input
+                  name="cursos"
+                  value="wiki"
+                  type="checkbox"
+                  class="input-checkbox"
+                /> <p>Ataque e Defesa</p> </label>
 
-                <label>
-                  <input
-                    name="cursos"
-                    value="additional-courses"
-                    type="checkbox"
-                    class="input-checkbox"
-                  /> <p>Flow Magiko</p> </label>
+              <label>
+                <input
+                  name="cursos"
+                  value="forum"
+                  type="checkbox"
+                  class="input-checkbox"
+                /> <p>Intro a Magia</p> </label>
 
-                <label>
-                  <input
-                    name="cursos"
-                    value="additional-courses"
-                    type="checkbox"
-                    class="input-checkbox"
-                  /> <p>Pedras</p> </label>
-              </div>
+              <label>
+                <input
+                  name="cursos"
+                  value="additional-courses"
+                  type="checkbox"
+                  class="input-checkbox"
+                /> <p>Flow Magiko</p> </label>
+
+              <label>
+                <input
+                  name="cursos"
+                  value="additional-courses"
+                  type="checkbox"
+                  class="input-checkbox"
+                /> <p>Pedras</p> </label>
             </div>
           </div>
+
+          </div>
+
+          <!-- COMENTÁRIO -->
+          <div class="group">
+
+            <p id="text-area" for="text"><h3>Comentarios</h3></p>
+            <textarea 
+              name="comments" 
+              id="comments" 
+              placeholder="Caso tenha algo a acrescentar, digite aqui..." 
+            ></textarea>
+
+          </div>
+
+          <!-- BOTÃO -->
+          <div class="group">
+
+            <button class="submitBtn">
+              <p>ENVIAR</p>
+            </button>
+
+          </div>
         </form>
+
     </section>
+
 </body>
 </html>
