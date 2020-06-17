@@ -100,7 +100,6 @@ p {
     justify-content: space-around;
     height: auto;
     width: 99%;
-    border: lawngreen solid;
 }
 
 .cursos {
@@ -125,7 +124,6 @@ p {
 }
 
 #submit-button {
-    padding: ;
     display: flex;
     flex-direction: row;
     justify-content: center;
