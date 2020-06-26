@@ -53,6 +53,12 @@ p {
     width: 90%;
 }
 
+#title {
+    color: #f0f0fa;
+    text-shadow: 5px 5px 8px rgba(111, 2, 255, 0.568);
+}
+
+
   /*        FORMULÁRIO        */
 #survey-form {
     display: flex;
@@ -66,7 +72,8 @@ p {
     margin-bottom: 20px;
     border-radius: 5px;
     
-    background-color: rgba(0, 0, 255, 0.562);
+    background-color: rgba(12, 12, 53, 0.527);
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(102, 2, 141, 0.19);
     overflow: hidden;
 }
 
@@ -76,10 +83,13 @@ p {
 }
 
 .formEntry {
+    border-style: none;
+    border-bottom: rgb(45, 1, 104) 2px solid;
     border-radius: 5px;
+    background-color: transparent;
     width: 99%;
     height: 2.375rem;
-    color: #495057;
+    color: #a1d0ff;
 }
 
 .tipoPct {
@@ -120,7 +130,12 @@ p {
 #comments {
     width: 99%;
     min-height: 55px;
-
+    background-color: transparent;
+    color: skyblue;
+    border-style: none;
+    border-radius: 5px;
+    border-bottom: solid 2px  rgb(45, 1, 104);
+    border-top: solid 2px  rgb(112, 5, 253);
 }
 
 #submit-button {
@@ -136,15 +151,22 @@ p {
     height: 35px;
     
 
-    background-color: chartreuse;
+    background-color: rgb(223, 172, 5);
     color: white;
     border-radius: 2px;
+    border-style: none;
     
     cursor: pointer;
     font-size: 20px;
     text-align: center;
+    
+    transition: all ease-in 500ms;
+}
 
-
+.submitBtn:hover {
+    transform: scale(1.05);
+    background-color: rgb(255, 196, 0);
+    font-size: 22px;
 }
 
 #footer {
